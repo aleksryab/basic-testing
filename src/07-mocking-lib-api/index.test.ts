@@ -40,6 +40,6 @@ describe('throttledGetDataFromApi', () => {
 
   test('should return response data', async () => {
     const result = await throttledGetDataFromApi(apiPath);
-    expect(result).toEqual('Fake data');
+    expect(result).toBe('Fake data');
   });
 });
