@@ -80,7 +80,7 @@ describe('readFileAsynchronously', () => {
 
   test('should call join with pathToFile', async () => {
     const joinSpy = jest.spyOn(path, 'join');
-    readFileAsynchronously(pathToFile);
+    await readFileAsynchronously(pathToFile);
 
     expect(joinSpy).toHaveBeenCalledTimes(1);
     expect(joinSpy).toHaveBeenCalledWith(__dirname, pathToFile);
